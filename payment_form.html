@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="continer">
+    <form action=" ">
+
+        <h1 class="heading">Payment form</h1>
+        <p>Requried Fields are followed by * </p>
+        <h2>Contact Information</h2>
+        <p> Name: * <input type="text" name="name" required placeholder="Enter Name"></p>
+        <fieldset>
+            <legend>Gender * </legend>
+        <p>
+            Male <input type="radio" name="gender" id="male" requried>
+            Female<input type="radio" name="gender" id="female" required>
+        </p>
+    </fieldset>
+    <p>Address: <textarea name="address" id="address" cols="100" row="8" placeholder="Enter Address"></textarea></p>
+     <P> Email:*
+        <input type="email" name="email" id="name" required placeholder="example@.com"></P>
+        <p>Pincode:* <input type="number" name="pincode" id="pincode" required placeholder="3355"></p>
+        <h2>Payment Information</h2>
+        <p>Card Type:*
+            <select name="card_type" id="card_type" required>
+                <option value="">--- Select a Card Type---</option>
+            <option value="VISA">VISA</option>
+            <option value="Master">Master</option>
+            <option value="PayPak">PayPak</option>
+            </select>
+
+        </p>  
+        <p>Card Number * <input type="number" name="Card_number" id="Card_number" required placeholder="11111-22222-444-33"></p>
+        <P>
+            Expiration Date: * <input type="date" name="Expriation_date" id="Expritation_date" required>
+        </P> 
+        <p>CVV * <input type="password" name="cvv" id="id" required placeholder="2233"></p>
+<input type="Submit" value="PayNow">
+    </form>
+</div>
+</body>
+</html>
